@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Shopping List</title>
+		<link rel="stylesheet" href="manageshopping/css/manageShoppingList.css">
+
+		<link rel="stylesheet" href="manageshopping/css/_bootswatch.scss">
+		<link rel="stylesheet" href="manageshopping/css/_variables.scss">
+		<link rel="stylesheet" href="manageshopping/css/bootstrap.css">
+
+		<meta charset="UTF-8">
+		<meta name="description" content="AutoMotive Template">
+		<meta name="keywords" content="AutoMotive, unica, creative, html">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>MGBD Parts & Services</title>
+	
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+		<script src="profile/script.js"></script>
+		<!-- Css -->
+		<link rel="stylesheet" href="home/css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="home/css/font-awesome.min.css" type="text/css">
+		<link rel="stylesheet" href="home/css/elegant-icons.css" type="text/css">
+		<link rel="stylesheet" href="home/css/nice-select.css" type="text/css">
+		<link rel="stylesheet" href="home/css/jquery-ui.min.css" type="text/css">
+		<link rel="stylesheet" href="home/css/magnific-popup.css" type="text/css">
+		<link rel="stylesheet" href="home/css/owl.carousel.min.css" type="text/css">
+		<link rel="stylesheet" href="home/css/slicknav.min.css" type="text/css">
+		<link rel="stylesheet" href="home/css/style.css" type="text/css">
+		<link rel="stylesheet" href="profile/style.css" type="text/css">
+
+	</head>
+	<body>
+
+		  <!-- Header -->
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png"  alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <nav class="header__menu">
+						<ul>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                    <li><a href="my_account.html"> My Account</a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="carsale.html">Car Sale</a></li>
+                                    <li><a href="privacy_policy.html">Privacy & Policy</a></li>
+                                    <li><a href="history.html">History</a></li>
+                                    <li><a href="newsletter.html"> NewsLetter</a></li>
+                                    <li><a href="safety.html"> Buyers Guid</a></li>
+            
+                                    
+                                </ul>
+                            </li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="header__right">
+                        <li><a href="#" class="search-switch"><span class="icon_search"></span></a></li>
+                        <li><a href="#"><span class="icon_cart_alt"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Section Begin -->
+        <div class="breadcrumb-option spad set-bg" data-setbg="manageshopping/cover.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="breadcrumb__text">
+                            <h2> Manage Shopping Lists </h2>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+		<div class="container">
+			<div class="header text-center mt-5">
+				<h5>For the items you want to buy in future can be added as a list</h5>
+			</div>
+
+			<div class="form-inline">
+				<div class="form-group mx-sm-2 mb-2">
+					<input type="number" class="form-control" name="empId" id="empId" placeholder="Shopping List Number">
+				</div>
+				<div class="form-group mx-sm-2 mb-2">
+					<input type="text" class="form-control" name="projectId" id="projectId" placeholder="Shopping List Name">
+				</div>
+				<div class="form-group mx-sm-2 mb-2">
+					<input type="date" class="form-control" value="" name="dateFrom" id="dateFrom" placeholder="Created Date">
+				</div>
+				<div class="form-group mx-sm-2 mb-2">
+					<input type="text" value="" class="form-control" name="dateTo" id="dateTo" placeholder="Note">
+        		</div>
+        <div>
+			
+				<button button type="button" class="btn btn-primary" onclick="addHtmlTableRow();" >Add</button>
+				
+				<button button type="button" class="btn btn-success" onclick="editHtmlTableSelectedRow();">Update</button>
+			
+				<button utton type="button" class="btn btn-warning" onclick="removeSelectedRow();" style="background-color:red">Remove</button>
+		</div>
+
+      </div>
+     
+			<table id="myTable">
+				<tr>
+					<th id="EmpID">Shopping List Number</th>
+					<th id="ProjectID">Shopping List Name</th>
+					<th id="DateFrom">Created Date</th>
+					<th id="DateTo">Note</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Chromework</td>
+					<td>2020-10-08</td>
+					<td>Need silver Chromework parts</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Gear Box</td>
+					<td>2020-05-16</td>
+					<td>Some Parts are missing</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Paints</td>
+					<td>2020-10-01</td>
+					<td>Pale yellow is not at the store</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Buffer</td>
+					<td>2020-05-04</td>
+					<td>Buffer need to be repaired</td>
+				</tr>
+				
+				
+			</table>
+    </div>
+        </div>
+        <br><br><br><br><br>
+		   <!-- Footer  -->
+		   <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
+			<div class="container">
+				<div class="footer__text">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<div class="footer__about">
+								<div class="footer__logo">
+									<img src="img/footer-logo.png" alt="">
+								</div>
+								<p>Class is also likely to be focused on slow and gentle movements so it's a great type of
+								yoga to is also likely to be</p>
+								<a href="#" class="primary-btn"><span class="icon_phone"></span> Contact Us</a>
+							</div>
+						</div>
+						
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<div class="footer__news">
+								<h5>Useful Links</h5>
+								<a href="#" class="footer__news__item">
+									Privacy Policy
+								</a>
+								<a href="#" class="footer__news__item">
+									Terms Of Use
+								</a>
+								<a href="#" class="footer__news__item">
+									Return Policy
+								</a>
+								<a href="#" class="footer__news__item">
+									Discount Coupons
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<div class="footer__address">
+								<h5> Contact Us </h5>
+								<p>Address: No 12A, Dixon Street, United Kingdom</p>
+								<p>  Fax: 441 1912681399</p>
+								<p>  Mobile: 441 1912681399</p>
+								<p>  Email: sales@mgbdparts.co.uk</p>
+							   
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<div class="footer__address">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2424.721718082789!2d-2.106752584614778!3d52.57464357982456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48709b98d1d5506b%3A0xc0f3a5a91b0a7e35!2sMGBD%20Parts%20%26%20Services!5e0!3m2!1sen!2slk!4v1602153366904!5m2!1sen!2slk" width="250" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="footer__copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						<div class="footer__copyright__text">
+							<p>Copyright &copy; 2020 All rights reserved </a></p>
+						</div>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</div>
+					<div class="col-md-4">
+						<div class="footer__copyright__social">
+							<a href="https://www.facebook.com/"><span class="social_facebook"></span></a>
+							<a href="https://twitter.com/" class="twitter"><span class="social_twitter"></span></a>
+							<a href="https://vimeo.com/" class="vimeo"><span class="social_vimeo"></span></a>
+							<a href="https://www.pinterest.com/" class="pinterest"><span class="social_pinterest"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Search -->
+		<div class="search-model">
+			<div class="h-100 d-flex align-items-center justify-content-center">
+				<div class="search-close-switch">+</div>
+				<form class="search-model-form">
+					<input type="text" id="search-input" placeholder="Search here.....">
+				</form>
+			</div>
+		</div>
+		
+		<!-- Js -->
+			<script src="home/js/jquery-3.3.1.min.js"></script>
+			<script src="home/js/bootstrap.min.js"></script>
+			<script src="home/js/jquery.magnific-popup.min.js"></script>
+			<script src="home/js/jquery-ui.min.js"></script>
+			<script src="home/js/jquery.nice-select.min.js"></script>
+			<script src="home/js/jquery.slicknav.js"></script>
+			<script src="home/js/owl.carousel.min.js"></script>
+			<script src="home/js/main.js"></script>
+			<script src="cpwd/assets/jquery/node_modules/jquery/dist/jquery.min.js"></script>
+			<script src="profile/script.js"></script>
+		
+		</body>
+		
+		</html>
+
+		<script src="manageshopping/js/manageShoppingList.js"></script>
+	</body>
+</html>

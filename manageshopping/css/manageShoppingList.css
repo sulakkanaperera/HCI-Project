@@ -1,0 +1,32 @@
+ table {
+     margin-top:25px;
+     width: 100%;
+    color: black;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    }
+    th {
+    background-color: rgb(202, 93, 184) ;
+    color: #fff;
+    }
+    tr:nth-child(even) {background-color: #f2f2f2}
+
+    .form-group{
+       margin:12px;
+       
+      }
+
+      .submit {
+      margin: 25px;
+      height: 45px;
+      justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+
+      
+      
+
+      

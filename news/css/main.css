@@ -1,0 +1,33 @@
+#register-area form .form-row input {
+    border-radius: 0%;
+    border: 1px solid rgb(135, 150, 245);
+    background-color: rgb(255, 255, 255);
+}
+
+#register-area form .form-row button {
+    width: 60%;
+    border: none;
+    border-radius: 0%;
+}
+
+#register-area form .sub-header-text {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#register-area .header-text h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 35px;
+    letter-spacing: 6px;
+}
+
+#register-area form .form-row .validation {
+    color: red;
+    font-size: 10px;
+}
+
+#newsLetter-form .validation {
+    color: red;
+}

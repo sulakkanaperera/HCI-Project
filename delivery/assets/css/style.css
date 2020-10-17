@@ -1,0 +1,210 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  font-family: "Montserrat", sans-serif;
+}
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #eef0f3;
+}
+
+
+
+.add-form {
+  justify-content: center;
+}
+.box{
+  width: 500px;
+  padding: 40px;
+  text-align: center;
+}
+.box h1{
+  color: rgb(22, 22, 22);
+  font-weight: 800;
+  margin-bottom: 60px ;
+}
+.box input[type = "text"],.box input[type = "password"], .box input[type = "email"]{
+  border:0;
+  display: block;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid #080707;
+  padding: 14px 10px;
+  width: 350px;
+  outline: none;
+  color: rgb(17, 15, 15);
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus, .box input[type = "email"]:focus{
+  width: 380px;
+  border-color: #101111;
+}
+.box input[type = "submit"],.box input[type = "reset"],.box input[type = "button"]{
+  border:0;
+  background: none;
+  margin: 10px auto;
+  text-align: center;
+  border: 2px solid #0c0c0c;
+  padding: 14px 40px;
+  outline: none;
+  color: rgb(27, 20, 20);
+  transition: 0.25s;
+  cursor: pointer;
+  margin: 10px;
+}
+.box input[type = "submit"]{
+  background: #8a0278;
+}
+.box input[type = "reset"]{
+  background: #1c038b;
+}
+.box input[type = "button"]{
+  background: #f11010;
+}
+
+
+
+.id {
+  color: rgb(27, 25, 25);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.companyName {
+  color: rgb(27, 25, 25);
+  font-weight: 600;
+  font-size: 16px;
+ 
+}
+
+.name {
+  color: rgb(27, 25, 25);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.address {
+  color: rgb(27, 25, 25);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.postCode {
+  color: rgb(27, 25, 25);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card-btn {
+  border:0;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #131414;
+  padding: 14px 40px;
+  outline: none;
+  color: rgb(27, 24, 24);
+  transition: 0.25s;
+  cursor: pointer;
+  margin: 10px;
+}
+.card-btn {
+  background: #1f9c53;
+}
+
+.card-btn-red {
+  border:0;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #330505;
+  padding: 14px 35px;
+  outline: none;
+  color: rgb(17, 16, 16);
+  transition: 0.25s;
+  cursor: pointer;
+  margin: 10px;
+}
+.card-btn-red {
+  background: #7c1313;
+}
+
+.d-none {
+  display: none;
+}
+
+.card-around {
+  display: flex;
+  justify-content: center;
+}
+
+
+.shadow {
+  text-align: center;
+  color: white;
+  position: relative;
+  margin: 50px 50px 50px 50px;
+  padding: 40px 35px 70px 40px;
+  border-radius: 30px;
+  height: 250px;
+  background: linear-gradient(0deg,#6e6e70,#e9dbe4);
+}
+
+.shadow:before,
+.shadow:after
+{
+  content:  '';
+  border-radius: 30px;
+  position : absolute ;
+  top: -2px;
+  left: -2px;
+  background : linear-gradient( #030303,#0c0b0c) ;
+  background-size: 400%;
+  width: calc(100% + 4px) ;
+  height: calc(100% + 4px) ;
+  z-index: -1;
+  animation : animate 20s linear infinite ;
+}
+
+.shadow:after
+{
+  filter: blur(10px)
+}
+
+
+@keyframes animate
+{
+  0%
+  {
+    background-position : 0 0 ;
+  }
+  50%
+  {
+    background-position : 300% 0 ;
+  }
+  100%
+  {
+    background-position : 0 0 ;
+  }
+}
+
+
+

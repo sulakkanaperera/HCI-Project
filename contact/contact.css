@@ -1,0 +1,176 @@
+form{
+    font-family: 'Roboto Mono', monospace;
+    background: #67118f8c;
+    padding: 8px;
+    
+}
+body{
+    height: 80%;
+    width: 100%;
+}
+
+ 
+.form-horizontal .header{
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #fff;
+}
+ 
+.form-horizontal .form-content{
+    border: 1px solid #fff;
+}
+ 
+.form-group{
+    padding: 0 40px;
+}
+ 
+.form-horizontal .form-control{
+    padding: 20px;
+    
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+}
+ 
+.form-horizontal .form-control:focus{
+    border-color: #fff;
+    box-shadow: none;
+}
+ 
+.form-horizontal .control-label{
+    font-size: 17px;
+    color: rgb(245, 237, 237);
+    position: absolute;
+    top: 5px;
+    left: 27px;
+    text-align: center;
+}
+ 
+
+ 
+
+ 
+
+ 
+.form-horizontal .btn{
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: #eee7e7;
+    margin: 10px 0;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    padding: 10px 25px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.5s ease 0s;
+}
+ 
+.form-horizontal .btn:hover{
+    border-color: #fff;
+    color: rgb(255, 255, 255);
+}
+ 
+.form-horizontal .btn:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(195, 201, 114);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+}
+ 
+.form-horizontal .btn:hover:before{
+    top: 0;
+}
+ 
+.form-horizontal .radio input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+}
+ 
+.form-horizontal .radio input[type="radio"] + .radio-label:before{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #f4f4f4;
+    border: 1px solid #b4b4b4;
+    position: relative;
+    top: 5px;
+    margin-right: 16px;
+    text-align: center;
+    -webkit-transition: all 250ms ease 0s;
+    transition: all 250ms ease 0s;
+}
+ 
+.form-horizontal .radio input[type="radio"]:checked + .radio-label:before{
+    background: #d09ef5;
+    box-shadow: inset 0 0 0 2px #f4f4f4;
+}
+ 
+.radio input[type="radio"]:focus + .radio-label:before{
+    outline: none;
+    border-color: #d09ef5;
+}
+ 
+.form-horizontal .checkbox-custom{
+    opacity: 0;
+    position: absolute;
+}
+ 
+.form-horizontal .checkbox-custom,
+.form-horizontal .checkbox-custom-label{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+ 
+.form-horizontal .checkbox-custom-label{
+    position: relative;
+}
+ 
+.form-horizontal .checkbox-custom + .checkbox-custom-label:before{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height:15px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #fff;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+ 
+.form-horizontal .checkbox-custom:checked + .checkbox-custom-label:before{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+ 
+.form-horizontal .checkbox label{
+    padding-left: 0;
+}
+ 
+.form-control::-moz-placeholder{
+    color:#fff;
+}
